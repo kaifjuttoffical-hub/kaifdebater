@@ -1,0 +1,283 @@
+/* =========================
+   KAIF DEBATER WEBSITE
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background: #111827;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    min-height: 75vh;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background: white;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.hero h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.hero-image img {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #2563eb;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 8px 8px 8px 0;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   HOME WORK SECTION
+   ========================= */
+
+.home-sections {
+    padding: 70px 8%;
+    text-align: center;
+    background: #f5f7fa;
+}
+
+.home-sections h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.work-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.work-card {
+    width: 300px;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-8px);
+}
+
+.work-card h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.work-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about {
+    padding: 70px 8%;
+    text-align: center;
+    background: #eef2ff;
+}
+
+.about h1,
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   RESEARCH & VIDEOS
+   ========================= */
+
+.research,
+.videos,
+.articles {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.research h1,
+.videos h1,
+.articles h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.research h2,
+.videos h2,
+.articles h2 {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.card {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .home-sections,
+    .about,
+    .research,
+    .articles,
+    .videos {
+        padding: 50px 6%;
+    }
+
+    .work-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+.about-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
